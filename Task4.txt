@@ -1,5 +1,5 @@
 /* Program for Task 4*/
-// Letter Grade Program
+// Letter Grade Program. Happy coding
 
 var marks = parseInt(prompt("Enter Marks : "))
 
