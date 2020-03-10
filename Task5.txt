@@ -16,3 +16,4 @@ switch (letter) {
     default:
         document.write("Consonant");
 }
+// Happy coding
