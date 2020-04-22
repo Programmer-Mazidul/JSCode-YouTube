@@ -1,32 +1,43 @@
 // Array methods
 // you have already learned about pop(),push(),concat()
+// shift(), unshift(), splice(pos,noe,ele1,ele2..), splice(start,end), slice(4) 
+// sort(), reverse()
 
-// Shifting is equivalent to popping, working on the first element instead of the last.
-var names = ["Anis", "Mitu", "Kalam"];
-console.log("names are : " + names)
-names.shift();
-console.log("After shifting names are : " + names);
+var names = ["Mina","Rabeya","Kolpona","Anis"];
+console.log(names);
+
+// // shift opposite of pop
+// names.shift();
+// console.log(names);
+
+// // unshiftt opposite of push
+// names.unshift("Sagor");
+// console.log(names);
+
+// adding elements using splice
+// names.splice(2,1,"Karim","Rahim");
+// console.log(names);
+
+// removing elements using splice
+// names.splice(1,2);
+// console.log(names);
+
+// slice 
+// var newArray = names.slice(1);
+// console.log(newArray)
+// console.log(names)
+
+// var sortedNames = names.sort();
+// names.reverse();
+// console.log(sortedNames)
+
+var numbers = [20, 5, 25, 45, 1];
+numbers.sort(function(a,b){
+    return b-a;
+});
+console.log(numbers)
 
 
-// The unshift() method adds a new element to an array (at the beginning),
-names.unshift("Kolpona");
-console.log("After unshifting names are : " + names);
-
-// The splice() method can be used to add new items to an array: 
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.splice(2, 0, "Lemon", "Kiwi");
-// The first parameter (2) defines the position where new elements should be added (spliced in).
-// The second parameter (0) defines how many elements should be removed.
-// The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
 
 
-// With clever parameter setting, you can use splice() to remove elements without leaving "holes" in the array
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.splice(0, 1); // Removes the first element of fruits 
 
-
-//The slice() method slices out a piece of an array into a new array.
-// The slice() method creates a new array. It does not remove any elements from the source array.
-// This example slices out a part of an array starting from array element 1 ("Orange"):
-var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-var citrus = fruits.slice(1);
