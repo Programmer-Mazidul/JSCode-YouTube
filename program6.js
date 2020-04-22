@@ -1,33 +1,25 @@
-// Number Methods
+var number = 20;
+console.log(typeof(number))
 
-//toString() returns a number as a string
+number = toString(20);
+console.log(typeof(number))
 
-var num = 125;
-console.log(typeof (125));
+var x = 2.56789;
+// number of characters after the decimal point
+console.log(x.toFixed(1))
+console.log(x.toFixed(2))
 
-num = toString(num);
-console.log(typeof (num));
 
-// toFixed() returns a string, with the number written with a specified number of decimals
-var x = 7.856;
-console.log(x.toFixed(0));
-console.log(x.toFixed(1));
-console.log(x.toFixed(2));
+// total number of characters including the decimal point
+console.log(x.toPrecision(1))
+console.log(x.toPrecision(2))
 
-//toPrecision() returns a string, with a number written with a specified length.
-var x = 9.656;
-x.toPrecision(); // returns 9.656
-x.toPrecision(2); // returns 9.7
-x.toPrecision(4); // returns 9.656
-x.toPrecision(6); // returns 9.65600 
 
-// Number() method convert JavaScript variables to numbers
-Number(true); // returns 1
-Number(false); // returns 0
-Number("10"); // returns 10
-Number("  10"); // returns 10
-Number("10  "); // returns 10
-Number(" 10  "); // returns 10
-Number("10.33"); // returns 10.33
+console.log(Number(true))
+console.log(Number(false))
+console.log(Number(" 10"))
+console.log(Number(" 10 "))
+console.log(Number("10.25"))
 
-// parseInt(), parseFloat()
+
+
